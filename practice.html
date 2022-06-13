@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practice CSS</title> 
+        <link rel ="stylesheet" href="practice.css"/>
+        <style>
+           /* *{
+                background-color: rebeccapurple;
+            }*/
+            /*div{
+                background-color: rebeccapurple;
+            }*/
+            /*span{
+                background-color: red;
+            }*/
+            /*.red{
+                background-color: red;
+            }
+            #blue{
+                background-color:blue;
+            }*/
+            /*div.red.green{
+                background-color: red;
+                color: green;
+            }*/
+            /*group the element we can use the selector*/
+            /*span, li{
+                background-color: red;
+            }*/
+           /* span, li.red{
+                background-color: red;
+            }*/
+            /*Target the unordered list*/
+            /*ul li{
+                background-color: red;
+            }*/
+            /*div strong{
+                background-color: green;
+            }*/
+            span strong{
+                background-color: red;
+            }
+            /*li.green~li{
+                background-color: green;
+            }*/
+            li:hover{
+                background-color: blue;
+                cursor: pointer;
+            }
+            input:focus{
+                background-color: black;
+            }
+            /*li:first-child{
+                background-color: red;
+            }
+            li:last-child{
+                background-color: red;
+            }*/
+            /*li:nth-child(odd)
+            {
+                background-color: red;
+            }
+            li:nth-child(even)
+            {
+                background-color: green;
+            }*/
+            /*span:last-of-type{
+                background-color: green;
+            }*/
+            /*li:nth-of-type();*/
+            span:only-of-type{
+                background-color: green;
+            }
+            div.red::before{
+                content: "Brefore";
+                background-color: aqua;
+            }
+            div.red::before{
+                content: "After";
+                background-color: green;
+            }
+            [data-green]{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="red green">This is 1st div</div>
+        <div data-green>This is second div2</div>
+        <span id="blue">This is 1st span</span>
+        <div>
+            <span>
+                <strong>this is the nested text</strong>
+            </span>
+            <!--It is targetting the first span (first of type)-->
+            <span>hey there we are ahed </span>
+            <span>hey there we are ahed </span>
+            <span>hey there we are ahed </span>
+            <span>hey there we are ahed </span>
+            <span>hey there we are ahed </span>
+        </div>
+        <ul>
+            <li class="green">this is item 1</li>
+            <li >this is item 2</li>
+            <li>this is item 3</li>
+            <li>this is item 4</li>
+        </ul>
+        <input type="text"/>
+        <br/>
+        <input type="checkbox"/>
+        <br/>
+        <input type="radio"/>
+    </body>
+</html>
