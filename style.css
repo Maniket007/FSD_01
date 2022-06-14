@@ -1,7 +1,60 @@
-body{
-    background-color: blue;
+*{
+   margin: 0;
+   padding: 0;
 }
-h1{
-    color: navy;
-    margin: 200px;
+.wrapper{
+        /*background: url('https://images6.alphacoders.com/105/1052781.jpg');  */  
+        background-repeat: no-repeat;
+        background-color: aqua;
+        height: 950vh;
+}
+/*Different types of unit we have
+PX-fixed size of unit..it os not change due to size if view port.
+run.
+vw & vh
+*/
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 80px;
+    background-color: black;
+}
+.header .logo{
+    height: 50px;
+    width: 80px;
+    padding: 200px 300px;
+}
+.header ul{
+    margin-top: 30px;
+    float: right;
+    margin-left: 1000px;
+}
+.header ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+}
+.header ul li a{
+    font-size: 20px;
+    color: black;
+    padding: 6px 15px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.header ul li a.active , .header ul li a:hover{
+    background-color: red;
+    border-radius: 2px;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+.btn{
+    padding: 15px 25px;
+    margin-top: 20px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
 }
