@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <!--<style>
+            span.a{
+                display: inline; /*the default behaviour*/
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+                border: 1px solid black;
+                background-color: goldenrod;
+            }
+            span.b{
+                display: Inline-block; /*the default behaviour*/
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+                border: 1px solid black;
+                background-color: goldenrod;
+            }
+            span.c{
+                display: block; /*the default behaviour*/
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+                border: 1px solid black;
+                background-color: goldenrod;
+            }
+        </style>-->
+        <style>
+            .a{
+                height: 300px;/*fixed size it will not change size of viewport
+                                em---it is relative to the font size of element on which they are used
+                                rem--it is relative to the root element(nested element)
+                                %----widly used for responsive design
+                                vw & vh
+                                -------vw---1vw=1% of viewport width
+                                -------vh---1vh=1% of viewport height*/
+                width: 300px;
+                background-color: red;
+            }
+            .b{
+                height: 50%;
+                width: 50%;
+                background-color: green;
+            }
+            .font{
+                font-size: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <!--<h1>The display property</h1>
+        <h2>Display:Inline</h2>
+        <div>
+            <span class="a">Loren</span>
+            <span class="a">Ipsum</span>
+        </div>
+        <h2>Display:Inline-block</h2>
+        <div>
+            <span class="b">Loren</span>
+            <span class="b">Ipsum</span>
+        </div>
+        <h2>Display:block</h2>
+        <div>
+            <span class="c">Loren</span>
+            <span class="c">Ipsum</span>
+        </div>-->
+        <div class="a">
+            <div class="b">Font size</div>
+        </div>
+    </body>
+</html>
