@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+            .Parent{
+                background-color: darkblue;
+                width: 400px;
+                height: 400px;
+            }   
+            .Child{
+                background-color: tomato;
+                height: 50%;
+                width: 50%;
+                transition: transform 1s ease-in-out;
+                animation: left-to-right 1s ease-in forwards infinite alternate;
+                /*transition: all 1sc;*/
+            }
+            .Parent:hover .Child{
+                /*background-color: aqua;*/
+                /*transition: transform 1s;*/
+                /*transform: translate(100%);*/
+                animation-play-state: paused;
+            }
+            @keyframes left-to-right {
+                0%{
+                    transform: translateX(0);
+                }
+                33%{
+                    transform: translateY(100%);
+                }
+                66%{
+                    transform: translateX(100%) translateY(100%);
+                }
+                100%{
+                    transform: translateX(100%);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Parent">
+            <div class="Child"></div>
+        </div>
+    </body>
+</html>
