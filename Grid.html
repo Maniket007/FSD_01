@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GRID element</title>
+        <style>
+            .GRID-Item{
+                background-color: lightgray;
+                border: 1px solid gray;
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .GRID-container{
+                display: grid;
+                /*grid-template-columns: 1fr 1fr;*/
+                grid-template-columns: auto auto auto;
+                background-color: black;
+                padding: 10px;
+                /*column-gap: 30px;*/
+                /*row-gap: 30px;*/
+                /*gap: 50px 100px;*/
+                gap: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is grid element</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, 
+            incidunt cupiditate nihil amet facere debitis ratione facilis ex unde, a eligendi. 
+            Velit beatae quis fugit, architecto fuga molestiae cumque nam.
+        </p>
+        <div class="GRID-container">
+            <div class="GRID-Item">1</div>
+            <div class="GRID-Item">2</div>
+            <div class="GRID-Item">3</div>
+            <div class="GRID-Item">4</div>
+            <div class="GRID-Item">5</div>
+            <div class="GRID-Item">6</div>
+            <div class="GRID-Item">7</div>
+            <div class="GRID-Item">8</div>
+            <div class="GRID-Item">9</div>
+        </div>
+    </body>
+</html>
