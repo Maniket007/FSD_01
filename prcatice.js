@@ -130,8 +130,9 @@ alert(AccessAllowed)*/
 //let messgae = age1 < 3  ? "baby" : age1 < 18 ? "middle age" : age1 == 18 ? "Elligible";
 
 //Logical opreator
+
 // || OR
-if(true||false)
+/*if(true||false)
 {
     console.log("FATTY");
 }
@@ -140,17 +141,31 @@ let hour = 9
 if(hour < 10 || hour >18)
 {
     console.log("The office is closed");
-}
+}*/
 
 //Short circuit
-true || console.log("Not Printed");
+//true || console.log("Not Printed");
 
 //&& And
 //console.log(true && false);
 
-let ho = 12;
+/*let ho = 12;
 let min = 30;
 if(ho == 12 && min == 30)
 {
     console.log('the time is 12:30');
+}*/
+
+// ! NOT
+//console.log(!true);
+
+//Function Declaration
+function ShowMessage(){
+    console.log("Heeloo every one:");
 }
+ShowMessage();
+
+function hideMesssage(msg) {
+    console.log(msg);
+}
+hideMesssage("Hi everyone");
