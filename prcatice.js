@@ -84,3 +84,73 @@ console.log(isGreater);
 //let num=Number(str);
 //console.log(typeof num);
 console.log(Number(true));
+
+//Comparision opreator
+console.log(2>1);
+console.log(2>=1);
+console.log(2==1);
+console.log(2!=1);
+console.log("Z" > "A");
+
+//unicode
+//console.log("2">1);
+//console.log("01" == 1);
+console.log(0 == false);
+console.log(""== false);
+console.log(0 === false);
+console.log(""=== false);
+
+//Conditional statement
+//if(condition){
+
+//}
+//else{
+
+//}
+
+//let result = condition ? value1 : value2;
+
+//let AccessAllowed;
+//let age = prompt('How old are you!', "");
+/*if(age > 18)
+{
+    AccessAllowed = true;
+}
+else
+{
+    AccessAllowed = false;
+}
+alert(AccessAllowed)*/
+
+//let age = prompt('How old are you!', "");
+//let AccessAllowed = age > 18 ? true : false;
+//alert(AccessAllowed);
+
+//let age1 = prompt('age1', 18);
+//let messgae = age1 < 3  ? "baby" : age1 < 18 ? "middle age" : age1 == 18 ? "Elligible";
+
+//Logical opreator
+// || OR
+if(true||false)
+{
+    console.log("FATTY");
+}
+
+let hour = 9
+if(hour < 10 || hour >18)
+{
+    console.log("The office is closed");
+}
+
+//Short circuit
+true || console.log("Not Printed");
+
+//&& And
+//console.log(true && false);
+
+let ho = 12;
+let min = 30;
+if(ho == 12 && min == 30)
+{
+    console.log('the time is 12:30');
+}
