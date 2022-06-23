@@ -160,7 +160,7 @@ if(ho == 12 && min == 30)
 //console.log(!true);
 
 //Function Declaration
-function ShowMessage(){
+/*function ShowMessage(){
     console.log("Heeloo every one:");
 }
 ShowMessage();
@@ -168,4 +168,13 @@ ShowMessage();
 function hideMesssage(msg) {
     console.log(msg);
 }
-hideMesssage("Hi everyone");
+hideMesssage("Hi everyone");*/
+
+let Username = 'John';
+function showmessage(msg){
+    let Username = 'Bob';
+    console.log( msg + " " +Username );
+
+}
+showmessage("Hi");
+
