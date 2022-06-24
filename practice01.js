@@ -72,6 +72,51 @@ var sum5 = () =>{
 `const` is a signal that the identifier won't be reassigned. */
 
 
+//Creating object..
+let user = new Object() //object costructor syntax..
+let user1 = {}  //Object literal syntax..
+console.log(user)
+console.log(user1)
+
+let user2 ={
+    name: 'Maniket',
+    age: 23,
+    street: 'Simri',
+    "islike js" : true
+}
+//Adding the extra object 
+user2.isAdmin = true
+//deleting the object from existing..
+delete user2.age
+console.log(user2)
+
+//accessing the value from object..
+console.log(user2.name)
+console.log(user2.age)
+console.log(user2.street)
+console.log(user2["islike js"])
+
+//This is another type of function which is delclaring the object.
+function makeuser(name1, age1){
+    return{
+        name1: name1,
+        age1: age1
+    }
+}
+let user3 = makeuser('Johny', 21)
+console.log(user3.name1)
+console.log(user3.age1)
+
+//Shortcut properties...
+function makeuser(name2, age2){
+    return{
+        name2,
+        age2
+    }
+}
+let user4 = makeuser('Danny', 22)
+console.log(user4.name2)
+console.log(user4.age2)
 
 
 
