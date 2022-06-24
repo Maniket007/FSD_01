@@ -68,7 +68,7 @@ var sum5 = () =>{
     return 2+3;
 };
 
-/* Uses of let and const `let` is a signal that the variable may be reassigned
+/* Uses of let and const----- `let` is a signal that the variable may be reassigned
 `const` is a signal that the identifier won't be reassigned. */
 
 
@@ -108,7 +108,7 @@ console.log(user3.name1)
 console.log(user3.age1)
 
 //Shortcut properties...
-function makeuser(name2, age2){
+/*function makeuser(name2, age2){
     return{
         name2,
         age2
@@ -116,12 +116,64 @@ function makeuser(name2, age2){
 }
 let user4 = makeuser('Danny', 22)
 console.log(user4.name2)
-console.log(user4.age2)
+console.log(user4.age2)*/
 
+let user5={name: 'Maniket1', age:20}
+console.log(user5.name)
 
+//Syntax for (For in loop)
+let user6 = {
+    name: 'Manik',
+    age: 23,
+    isAdmin1 : true
+}
+/*for(key in object){
+    //executed code for keys...
+}*/
+for (let key in user6){
+    //keys
+    console.log(key)
+    //all the value of the keys
+    console.log(user6[key])
+}
 
+//var is a function scope..
+var ab = 100;//Global
+{
+    var ab = 200;//local
+}
+console.log(ab);
 
+//let and const are block scope...
+let ac = 100;
+{
+    let ac = 200;
+}
+console.log(ac);
 
+//when we cannot access let, var, const before initailization it comes under RED zone..
+
+var a = 100;
+function x(){
+    var a=10;
+    console.log(a);
+}
+x();
+
+var num = 100;
+function za(){
+    var num = 200;
+    function az(){
+        var num = 300;
+        function as (){
+            var num = 400;
+        }
+        as();
+    }
+    az();
+}
+za();
+console.log(num);
 
 
 
