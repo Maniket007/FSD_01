@@ -170,11 +170,13 @@ function hideMesssage(msg) {
 }
 hideMesssage("Hi everyone");*/
 
-let Username = 'John';
+/*let Username = 'John';
 function showmessage(msg){
     let Username = 'Bob';
     console.log( msg + " " +Username );
 
 }
-showmessage("Hi");
+showmessage("Hi");*/
+
+
 
